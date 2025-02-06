@@ -10,10 +10,10 @@ import org.jetbrains.compose.reload.DevelopmentEntryPoint
 fun main() = application {
     Window(
         title = "M78Exercices",
-        state = rememberWindowState(width = 800.dp, height = 600.dp),
+        state = rememberWindowState(width = 600.dp, height = 400.dp),
         onCloseRequest = ::exitApplication,
     ) {
-        window.minimumSize = Dimension(350, 600)
+        window.minimumSize = Dimension(600, 400)
         DevelopmentEntryPoint {
             App()
         }
