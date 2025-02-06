@@ -69,7 +69,6 @@ kotlin {
             implementation(libs.androidx.activityCompose)
             implementation(libs.kotlinx.coroutines.android)
             implementation(libs.ktor.client.okhttp)
-            //implementation("com.example.android:app-magic:12.3")
         }
 
         jvmMain.dependencies {
@@ -104,6 +103,7 @@ android {
 //https://developer.android.com/develop/ui/compose/testing#setup
 dependencies {
     implementation(libs.material)
+    implementation(libs.androidx.material3.android)
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
 }

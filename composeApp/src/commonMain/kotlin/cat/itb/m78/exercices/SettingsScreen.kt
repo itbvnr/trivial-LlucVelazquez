@@ -1,5 +1,6 @@
 package cat.itb.m78.exercices
 
+import androidx.compose.animation.slideIn
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -9,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
+import androidx.compose.material3.*
 
 @Composable
 fun SettingsScreen(navigateToMenuScreen: ()-> Unit){
@@ -24,9 +26,6 @@ fun SettingsScreen(navigateToMenuScreen: ()-> Unit){
         Button(onClick = navigateToMenuScreen){
             Text("Return to menu")
         }
-        /*<com.google.android.material.slider.Slider
-        ...
-        android:valueFrom="0.0"
-        android:valueTo="100.0"  />*/
     }
+
 }
