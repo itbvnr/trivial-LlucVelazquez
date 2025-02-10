@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.*
@@ -47,6 +48,7 @@ fun GameScreen(navigateToResultScreen: (Int)-> Unit){
                 Text("Answer4")
             }
         }
+        Column(horizontalAlignment = Alignment.CenterHorizontally) { LinearProgressIndicator() }
     }
     if(num  > 10){
         navigateToResultScreen(score)
