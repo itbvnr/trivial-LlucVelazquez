@@ -9,11 +9,16 @@ import androidx.navigation.toRoute
 import cat.itb.m78.exercices.theme.AppTheme
 import kotlinx.serialization.Serializable
 
+
+
 @Composable
 internal fun App() = AppTheme {
     LibNavScreenSample()
 }
 
+var dificultad: String = "Normal"
+var rounds: Int = 10
+var timer: Float = 30f
 
 object Destination {
     @Serializable

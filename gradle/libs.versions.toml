@@ -19,6 +19,7 @@ material3Android = "1.3.1"
 foundationAndroid = "1.7.7"
 uiAndroid = "1.7.7"
 identityDoctypesJvm = "202411.1"
+foundationLayoutAndroid = "1.7.7"
 
 [libraries]
 
@@ -50,6 +51,7 @@ androidx-material3-android = { group = "androidx.compose.material3", name = "mat
 androidx-foundation-android = { group = "androidx.compose.foundation", name = "foundation-android", version.ref = "foundationAndroid" }
 androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
 identity-doctypes-jvm = { group = "com.android.identity", name = "identity-doctypes-jvm", version.ref = "identityDoctypesJvm" }
+androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
 
 [plugins]
 
