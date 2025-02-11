@@ -104,6 +104,9 @@ android {
 dependencies {
     implementation(libs.material)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.foundation.android)
+    implementation(libs.androidx.ui.android)
+    implementation(libs.identity.doctypes.jvm)
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
 }

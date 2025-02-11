@@ -34,7 +34,6 @@ fun LibNavScreenSample() {
                 navigateToGameScreen = { navController.navigate(Destination.GameScreen) },
                 navigateToSettingsScreen = { navController.navigate(Destination.SettingsScreen) }
             )
-
         }
         composable<Destination.GameScreen> {
             GameScreen { navController.navigate(Destination.ResultScreen(it)) }
