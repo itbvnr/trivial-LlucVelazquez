@@ -33,6 +33,9 @@ fun GameScreen(navigateToResultScreen: (Int)-> Unit){
             Row(verticalAlignment = Alignment.CenterVertically){
                 Button(onClick = {
                     num++
+                    if(respuesta.esCorrecta){
+                        score++
+                    }
                 }){
                     Text("${index + 1}. ${respuesta.texto}")
                 }/*
