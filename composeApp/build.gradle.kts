@@ -108,6 +108,7 @@ dependencies {
     implementation(libs.androidx.ui.android)
     implementation(libs.identity.doctypes.jvm)
     implementation(libs.androidx.foundation.layout.android)
+    implementation(libs.identity.jvm)
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
 }

@@ -20,6 +20,7 @@ foundationAndroid = "1.7.7"
 uiAndroid = "1.7.7"
 identityDoctypesJvm = "202411.1"
 foundationLayoutAndroid = "1.7.7"
+identityJvm = "202411.1"
 
 [libraries]
 
@@ -52,6 +53,7 @@ androidx-foundation-android = { group = "androidx.compose.foundation", name = "f
 androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
 identity-doctypes-jvm = { group = "com.android.identity", name = "identity-doctypes-jvm", version.ref = "identityDoctypesJvm" }
 androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
+identity-jvm = { group = "com.android.identity", name = "identity-jvm", version.ref = "identityJvm" }
 
 [plugins]
 

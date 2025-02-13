@@ -17,10 +17,9 @@ import kotlin.math.roundToInt
 
 @Composable
 fun SettingsScreen(navigateToMenuScreen: ()-> Unit){
-    var sliderPosition by remember { mutableStateOf(30f) }
+    var sliderPosition by remember { mutableStateOf(timer) }
     val radioOptions = listOf(5, 10, 15)
-    var roundsSelected = remember { mutableStateOf(10) }
-    var difficult = remember { mutableStateOf("Normal") }
+    var difficult = remember { mutableStateOf(dificultad) }
     val (selectedOption, onOptionSelected) = remember { mutableStateOf(radioOptions[0]) }
     var expanded by remember { mutableStateOf(false) }
     Column(modifier = Modifier.fillMaxSize(),
@@ -102,6 +101,8 @@ fun SettingsScreen(navigateToMenuScreen: ()-> Unit){
         Button(onClick = navigateToMenuScreen){
             Text("Return to menu")
             dificultad = difficult.value
+            rounds = selectedOption
+            timer = sliderPosition
         }
     }
 
