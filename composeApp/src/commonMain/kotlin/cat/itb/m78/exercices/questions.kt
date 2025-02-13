@@ -34,8 +34,4 @@ fun obtenerPreguntaAleatoria(): Pregunta {
 fun mezclarRespuestas(pregunta: Pregunta): Pregunta {
     return pregunta.copy(respuestas = pregunta.respuestas.shuffled())
 }
-/*fun resupestasMezcladas(respuesta: Pregunta): Respuesta {
-    mezclarRespuestas(obtenerPreguntaAleatoria()).respuestas.forEachIndexed { index, respuesta ->
-        ("${index + 1}. ${respuesta.texto}")
-    }
-*/
+
