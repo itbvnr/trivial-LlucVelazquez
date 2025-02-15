@@ -63,7 +63,7 @@ val preguntas = listOf(
         )
     ),
     Pregunta(
-        "¿Qué planeta del sistema solar es conocido como el planeta rojo",
+        "¿Qué planeta del sistema solar es conocido como el planeta rojo?",
         listOf(
             Respuesta("Venus", false),
             Respuesta("Marte", true),
@@ -78,6 +78,51 @@ val preguntas = listOf(
             Respuesta("Jaen", false),
             Respuesta("Sant Pere de Vilamajor", false),
             Respuesta("Madrid", true)
+        )
+    ),
+    Pregunta(
+        "¿Cuál es el hueso más largo del cuerpo humano?",
+        listOf(
+            Respuesta("Fémur", true),
+            Respuesta("Tibia", false),
+            Respuesta("Peroné", false),
+            Respuesta("Húmero", false)
+        )
+    ),
+    Pregunta(
+        "¿Quién pintó La noche estrellada?",
+        listOf(
+            Respuesta("Claude Monet", false),
+            Respuesta("Vincent van Gogh", true),
+            Respuesta("Leonardo da Vinci", false),
+            Respuesta("Pablo Picasso", false)
+        )
+    ),
+    Pregunta(
+        "¿En qué año cayó el Muro de Berlín?",
+        listOf(
+            Respuesta("1985", false),
+            Respuesta("1989", true),
+            Respuesta("1991", false),
+            Respuesta("1995", false)
+        )
+    ),
+    Pregunta(
+        "¿Cuál es el símbolo químico del oro?",
+        listOf(
+            Respuesta("Ag", false),
+            Respuesta("Fe", false),
+            Respuesta("Au", true),
+            Respuesta("Pb", false)
+        )
+    ),
+    Pregunta(
+        "¿Quién es el autor de la novela Don Quijote de la Mancha?",
+        listOf(
+            Respuesta("Miguel de Unamuno", false),
+            Respuesta("Federico García Lorca", false),
+            Respuesta("Miguel de Cervantes", true),
+            Respuesta("Lope de Vega", false)
         )
     ),
 )
