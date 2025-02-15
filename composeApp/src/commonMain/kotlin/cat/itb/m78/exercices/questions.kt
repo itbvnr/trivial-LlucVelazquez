@@ -63,12 +63,21 @@ val preguntas = listOf(
         )
     ),
     Pregunta(
-        "¿Qué planeta del sistema solar es conocido como el "planeta rojo"?",
+        "¿Qué planeta del sistema solar es conocido como el planeta rojo",
         listOf(
             Respuesta("Venus", false),
             Respuesta("Marte", true),
             Respuesta("Júpiter", false),
             Respuesta("Saturno", false)
+        )
+    ),
+    Pregunta(
+        "¿Cuál es la capital de España?",
+        listOf(
+            Respuesta("Barcelona", false),
+            Respuesta("Jaen", false),
+            Respuesta("Sant Pere de Vilamajor", false),
+            Respuesta("Madrid", true)
         )
     ),
 )
