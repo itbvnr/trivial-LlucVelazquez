@@ -26,7 +26,51 @@ val preguntas = listOf(
             Respuesta("1941", false)
         )
     ),
-    // Añade más preguntas aquí...
+    Pregunta(
+        "¿Cuál es la capital de Australia?",
+        listOf(
+            Respuesta("Sídney", false),
+            Respuesta("Melbourne", false),
+            Respuesta("Canberra", true),
+            Respuesta("Perth", false)
+        )
+    ),
+    Pregunta(
+        "¿Qué gas es el más abundante en la atmósfera terrestre?",
+        listOf(
+            Respuesta("Oxígeno", false),
+            Respuesta("Dióxido de carbono", false),
+            Respuesta("Nitrógeno", true),
+            Respuesta("Argón", false)
+        )
+    ),
+    Pregunta(
+        "¿Quién escribió la obra Cien años de soledad?",
+        listOf(
+            Respuesta("Mario Vargas Llosa", false),
+            Respuesta("Gabriel García Márquez", true),
+            Respuesta("Julio Cortázar", false),
+            Respuesta("Jorge Luis Borges", false)
+        )
+    ),
+    Pregunta(
+        "¿Cuál es el río más largo del mundo?",
+        listOf(
+            Respuesta("Amazonas", true),
+            Respuesta("Nilo", false),
+            Respuesta("Yangtsé", false),
+            Respuesta("Misisipi", false)
+        )
+    ),
+    Pregunta(
+        "¿Qué planeta del sistema solar es conocido como el "planeta rojo"?",
+        listOf(
+            Respuesta("Venus", false),
+            Respuesta("Marte", true),
+            Respuesta("Júpiter", false),
+            Respuesta("Saturno", false)
+        )
+    ),
 )
 fun obtenerPreguntaAleatoria(): Pregunta {
     return preguntas.random()
