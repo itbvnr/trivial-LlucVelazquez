@@ -125,6 +125,33 @@ val preguntas = listOf(
             Respuesta("Lope de Vega", false)
         )
     ),
+    Pregunta(
+        "¿Cuál es la capital de Alemania?",
+        listOf(
+            Respuesta("Viena", false),
+            Respuesta("Berlín", true),
+            Respuesta("Leipzig", false),
+            Respuesta("Munich", false)
+        )
+    ),
+    Pregunta(
+        "¿Cuál es la capital de Italia?",
+        listOf(
+            Respuesta("Milan", false),
+            Respuesta("Roma", true),
+            Respuesta("Como", false),
+            Respuesta("Turin", false)
+        )
+    ),
+    Pregunta(
+        "¿Cuál es la capital de Inglaterra?",
+        listOf(
+            Respuesta("Chelsea", false),
+            Respuesta("Londres", true),
+            Respuesta("Manchester", false),
+            Respuesta("Everton", false)
+        )
+    ),
 )
 fun obtenerPreguntaAleatoria(): Pregunta {
     return preguntas.random()
