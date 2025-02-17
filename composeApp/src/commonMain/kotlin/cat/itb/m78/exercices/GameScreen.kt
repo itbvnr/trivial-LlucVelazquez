@@ -24,7 +24,6 @@ fun GameScreen(navigateToResultScreen: (Int)-> Unit){
         targetValue = progress,
         animationSpec = ProgressIndicatorDefaults.ProgressAnimationSpec
     )
-
     Column(modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally){
         Text("Round: $num /$rounds")

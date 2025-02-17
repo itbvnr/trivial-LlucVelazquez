@@ -165,7 +165,7 @@ val preguntas = listOf(
         )
     ),
 )
-val preguntasE = listOf(
+val preguntasN = listOf(
     Pregunta(
         "¿Cuál es la capital de Inglaterra?",
         listOf(
@@ -230,13 +230,27 @@ val preguntasE = listOf(
         )
     ),
 )
+val preguntasE = listOf(
+    Pregunta(
+        "E",
+        listOf(
+            Respuesta("Jane Austen", false),
+            Respuesta("Jane Austen", true),
+            Respuesta("Jane Austen", true),
+            Respuesta("Jane Austen", true),
+        )
+    ),
+)
 
 fun obtenerPreguntaAleatoria(): Pregunta {
     if (dificultad == "Easy" || dificultad == "Normal") {
-        return preguntasE.random()
+        return preguntasN.random()
     }
     if (dificultad == "Hard" || dificultad == "Insane") {
         return preguntas.random()
+    }
+    if (dificultad == "Extreme") {
+        return preguntasE.random()
     }
     else {
         return preguntas.random()
