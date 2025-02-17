@@ -232,12 +232,147 @@ val preguntasN = listOf(
 )
 val preguntasE = listOf(
     Pregunta(
-        "E",
+        "En que equipo juega Marc Casado?",
         listOf(
-            Respuesta("Jane Austen", false),
-            Respuesta("Jane Austen", true),
-            Respuesta("Jane Austen", true),
-            Respuesta("Jane Austen", true),
+            Respuesta("Real Madrid", false),
+            Respuesta("FC Barcelona", true),
+            Respuesta("Sevilla FC", false),
+            Respuesta("FC Vilamajor", false),
+        )
+    ),
+    Pregunta(
+        "En que equipo juega Lionel Andres Messi?",
+        listOf(
+            Respuesta("Paris Saint-Germain", false),
+            Respuesta("FC Barcelona", false),
+            Respuesta("Malmö FF", false),
+            Respuesta("Inter Miami", true),
+        )
+    ),
+    Pregunta(
+        "En que equipo juega Luciano Dario Vietto?",
+        listOf(
+            Respuesta("Atletico de Madrid", false),
+            Respuesta("Al Hilal", false),
+            Respuesta("Racing Club", true),
+            Respuesta("Racing de Santander", false),
+        )
+    ),
+    Pregunta(
+        "En que pais juega el equipo La Fiorita?",
+        listOf(
+            Respuesta("San Marino", false),
+            Respuesta("Italia", false),
+            Respuesta("Andorra", true),
+            Respuesta("Brasil", false),
+        )
+    ),
+    Pregunta(
+        "En que equipo juega Luca Orellano?",
+        listOf(
+            Respuesta("FC Cincinnati", true),
+            Respuesta("Vasco da Gama", false),
+            Respuesta("Velez de Sarfield", false),
+            Respuesta("Boca Juniors", false),
+        )
+    ),
+    Pregunta(
+        "En que equipo juega Charles de Ketelaere?",
+        listOf(
+            Respuesta("Atalanta FC", true),
+            Respuesta("AC Milan", false),
+            Respuesta("Club Brujas", false),
+            Respuesta("AC Monza", false),
+        )
+    ),
+    Pregunta(
+        "Que equipo tiene el apodo de los Nerazzurri?",
+        listOf(
+            Respuesta("Atalanta FC", true),
+            Respuesta("AC Milan", false),
+            Respuesta("Como 1907", false),
+            Respuesta("AC Monza", false),
+        )
+    ),
+    Pregunta(
+        "En que division estuvo en la 2020/21 el CE Sabadell?",
+        listOf(
+            Respuesta("Primera Division", false),
+            Respuesta("La Liga EA Sports", false),
+            Respuesta("Segunda Division", true),
+            Respuesta("Primera Federacion", false),
+        )
+    ),
+    Pregunta(
+        "En que posicion acabo el CE Sabadell en la 2020/21?",
+        listOf(
+            Respuesta("23º", false),
+            Respuesta("19º", true),
+            Respuesta("18º", false),
+            Respuesta("20º", false),
+        )
+    ),
+    Pregunta(
+        "En que año se fundo el FC Barcelona?",
+        listOf(
+            Respuesta("1898", false),
+            Respuesta("1899", true),
+            Respuesta("Ayer", false),
+            Respuesta("1900", false),
+        )
+    ),
+    Pregunta(
+        "En que estadio jugo el FC Barcelona en la temporada 2024/25?",
+        listOf(
+            Respuesta("Estadio Olímpico Lluís Companys", true),
+            Respuesta("Camp Nou", false),
+            Respuesta("Spotify Camp Nou", false),
+            Respuesta("Nova Creu ALta", false),
+        )
+    ),
+    Pregunta(
+        "En que estadio juega el CE Sabadell?",
+        listOf(
+            Respuesta("El Casa Taradellas", true),
+            Respuesta("Estadio Montilivi", false),
+            Respuesta("Spotify Camp Nou", false),
+            Respuesta("Nova Creu ALta", true),
+        )
+    ),
+    Pregunta(
+        "En que año se fundo el FC Barcelona?",
+        listOf(
+            Respuesta("2000 A.C", false),
+            Respuesta("1903", true),
+            Respuesta("2027", false),
+            Respuesta("1907", false),
+        )
+    ),
+    Pregunta(
+        "En que equipo juega Ricard Puig?",
+        listOf(
+            Respuesta("Inter Miami, false),
+            Respuesta("LA Galaxy", true),
+            Respuesta("FC Barcelona", false),
+            Respuesta("New York City FC", false),
+        )
+    ),
+    Pregunta(
+        "Cual es el jugador más joven en firmar por un equipo de la Major League Soccer?",
+        listOf(
+            Respuesta("Maximo Carrizo, true),
+            Respuesta("Axel Key", false),
+            Respuesta("Axel Kei", false),
+            Respuesta("Andres Iniesta", false),
+        )
+    ),
+    Pregunta(
+        "Quien marco el gol de la victoria en la final del mundo en el año 2010?",
+        listOf(
+            Respuesta("Andres Iniesta, true),
+            Respuesta("David Villa", false),
+            Respuesta("Lionel Messi", false),
+            Respuesta("Arjen Robben", false),
         )
     ),
 )
