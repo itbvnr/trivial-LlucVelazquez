@@ -1,17 +1,57 @@
 package cat.itb.m78.exercices
 
 
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
 import cat.itb.m78.exercices.theme.AppTheme
-import org.jetbrains.compose.reload.DevelopmentEntryPoint
+import kotlinx.serialization.Serializable
+
+
 
 @Composable
 internal fun App() = AppTheme {
-    Box(Modifier.fillMaxSize()){
-        Text("Your app goes here!", Modifier.align(Alignment.Center))
+    LibNavScreenSample()
+}
+
+var dificultad: String = "Normal"
+var rounds: Int = 10
+var timer: Float = 30f
+
+object Destination {
+    @Serializable
+    data object MenuScreen
+    @Serializable
+    data object GameScreen
+    @Serializable
+    data class ResultScreen(var score: Int)
+    @Serializable
+    data object SettingsScreen
+}
+@Composable
+fun LibNavScreenSample() {
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination = Destination.MenuScreen) {
+        composable<Destination.MenuScreen> {
+            MenuScreen(
+                navigateToGameScreen = { navController.navigate(Destination.GameScreen) },
+                navigateToSettingsScreen = { navController.navigate(Destination.SettingsScreen) }
+            )
+        }
+        composable<Destination.GameScreen> {
+            GameScreen { navController.navigate(Destination.ResultScreen(it)) }
+        }
+        composable<Destination.ResultScreen> {
+            backStack -> var score = backStack.toRoute<Destination.ResultScreen>().score
+            ResultScreen(score) { navController.navigate(Destination.MenuScreen)
+            }
+        }
+        composable<Destination.SettingsScreen> {
+            SettingsScreen(
+                navigateToMenuScreen = { navController.navigate(Destination.MenuScreen) }
+            )
+        }
     }
 }
