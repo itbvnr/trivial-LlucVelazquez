@@ -340,7 +340,7 @@ val preguntasE = listOf(
         )
     ),
     Pregunta(
-        "En que año se fundo el FC Barcelona?",
+        "En que año se fundo el CE Sabadell?",
         listOf(
             Respuesta("2000 A.C", false),
             Respuesta("1903", true),
