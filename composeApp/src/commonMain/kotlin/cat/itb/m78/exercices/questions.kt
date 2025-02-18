@@ -351,7 +351,7 @@ val preguntasE = listOf(
     Pregunta(
         "En que equipo juega Ricard Puig?",
         listOf(
-            Respuesta("Inter Miami, false),
+            Respuesta("Inter Miami", false),
             Respuesta("LA Galaxy", true),
             Respuesta("FC Barcelona", false),
             Respuesta("New York City FC", false),
@@ -360,7 +360,7 @@ val preguntasE = listOf(
     Pregunta(
         "Cual es el jugador más joven en firmar por un equipo de la Major League Soccer?",
         listOf(
-            Respuesta("Maximo Carrizo, true),
+            Respuesta("Maximo Carrizo", true),
             Respuesta("Axel Key", false),
             Respuesta("Axel Kei", false),
             Respuesta("Andres Iniesta", false),
@@ -369,7 +369,7 @@ val preguntasE = listOf(
     Pregunta(
         "Quien marco el gol de la victoria en la final del mundo en el año 2010?",
         listOf(
-            Respuesta("Andres Iniesta, true),
+            Respuesta("Andres Iniesta", true),
             Respuesta("David Villa", false),
             Respuesta("Lionel Messi", false),
             Respuesta("Arjen Robben", false),
